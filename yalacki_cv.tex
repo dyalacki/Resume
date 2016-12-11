@@ -1,0 +1,170 @@
+ \documentclass{article}
+ \usepackage[absolute]{textpos}
+\usepackage[inline]{enumitem}   
+\usepackage{setspace}% http://ctan.org/pkg/setspace
+\usepackage{amssymb}
+\usepackage{hyperref}
+ \usepackage{fontspec}
+\usepackage{graphicx}
+\graphicspath{ {/Users/DRYalacki/Pictures/Professional/} }
+\usepackage{float}
+
+
+\setlength{\TPHorizModule}{\paperwidth}\setlength{\TPVertModule}{\paperheight}
+
+
+
+
+\setmainfont{Mundo Sans Std}
+\newfontfamily\regfont[]{Mundo Sans Std}
+\newfontfamily\bodyfont[]{Mundo Sans Std Light}
+\newfontfamily\headerfont[]{Verdana}
+%\newcommand*{\myfont}{\fontfamily{Verdana.ttf}\selectfont}
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkgray,
+    urlcolor=blue,
+}
+
+
+\begin{document}
+ \begin{titlepage} %need in order to get rid of the page number
+	 \begin{center}
+ 		\begin{textblock}{1}[.5,0](0.5,0.025) 
+ 			\rule{500pt}{1pt}
+		\end{textblock}%
+	 	\begin{textblock}{1}[.5,.5](0.5,0.1) 
+ 			\rule{500pt}{2pt}
+ 		\end{textblock}
+		 \begin{textblock}{1}[.5,.5](0.5,0.215) 
+ 			\rule{500pt}{1pt}
+ 		\end{textblock}
+		\begin{textblock}{1}[.5,.5](0.5,0.245) 
+ 			\rule{500pt}{2pt}
+ 		\end{textblock}
+		 \begin{textblock}{1}[.5,.5](0.5,0.365) 
+ 			\rule{500pt}{1pt}
+ 		\end{textblock}
+		\begin{textblock}{1}[.5,.5](0.5,0.395) 
+ 			\rule{500pt}{2pt}
+ 		\end{textblock}
+		 \begin{textblock}{1}[.5,.5](0.5,0.71) 
+ 			\rule{500pt}{1pt}
+ 		\end{textblock}
+		\begin{textblock}{1}[.5,.5](0.5,0.74) 
+ 			\rule{500pt}{2pt}
+ 		\end{textblock}
+ %will print the text "hello world" in a box of width 60% of \TPHorizModule (in my example, this is 60% of the total page width). The center (0.5,0.5) of that box will be placed at a point 30% to the right of the left margin, and 40% below the top margin (in TPxxxModule units).
+ 
+ %{\fontsize{50}{60}Hello World}
+ 	\begin{textblock}{1}[.5,.5](0.5,0.06) 
+		\fontsize{28}{24}\selectfont
+David Yalacki \\
+{\fontsize{12}{1}\selectfont  720-372-9448 | \href{mailto:david.yalacki@gmail.com}{\color{black}{david.yalacki@gmail.com}} | \href{http://www.linkedin.com/in/davidyalacki}{\color{black}{www.linkedin.com/in/davidyalacki}}}
+		\end{textblock}
+	\begin{textblock}{1}[.5,.5](0.5,0.12) 
+		{\fontsize{18}{20}\selectfont
+		Junior Scientific Researcher in Bioengineering} 
+	\end{textblock}	
+	\begin{textblock}{.8}[.5,.5](0.5,0.17) 
+		\raggedright
+		{\fontsize{12}{14}\bodyfont 
+My unusual life experiences have taught me that the best way to achieve success is to empower others. My life's mission is to build open source technologies that help people live healthier, more creative and vibrant lives. I have a proven ability to stay focused on long term projects, manage multiple projects at once and provide simple, yet innovative solutions to novel problems. \\} %{\fontsize{12}{1}\regfont Areas of expertise include:}
+	\end{textblock}
+	
+%% EDUCATION SECTION %%
+	
+	
+	\begin{textblock}{.8}[.5,.5](0.5,0.29)
+		{\fontsize{16}{18}\headerfont  Education \\}
+		\enspace
+		{\fontsize{12}{14}\headerfont Rice University, B.S. Bioengineering}
+		\raggedright{\fontsize{12}{14}\regfont \hfill 2014-2017 \\
+{\fontsize{12}{14}\bodyfont I wrote my senior thesis on how 3D printed fluidic networks can be used to supply nutrients to cells inside engineered tissue constructs. This work will lay the foundation for designing artificial vasculature. \\}}
+		\smallskip
+		{\fontsize{12}{14}\headerfont United States Air Force Academy, Biology}
+		\raggedright{\fontsize{12}{14}\regfont \hfill 2012-2014 \\
+{\fontsize{12}{14}\bodyfont Basic training was tough, but afterwards I made the Commandant's List for 2 semesters and the Dean's List every semester.  Before leaving to pursue engineering, I served as a basic training cadre.\\}}
+	\end{textblock}
+	
+	
+	
+%% PROFESSIONAL EXPERIENCE SECTION %%
+
+	
+	\begin{textblock}{.8}[.5,.5](0.5,0.54)
+		{\fontsize{16}{1}\headerfont  Professional Experience \\}
+		\enspace
+		{\fontsize{12}{14}\headerfont Miller Lab, Rice University, Houston, TX}
+		\raggedright{\fontsize{12}{14}\regfont \hfill Feb 2015 - Present \\
+		\smallskip 
+		\fontsize{12}{14}\bodyfont Redesigned, built and tested an open-source selective laser sintering machine to 3D print with carbohydrate materials. See our Github: \href{https://github.com/MillerLabFTW/OpenSLS}{github.com/MillerLabFTW/OpenSLS}}
+			\begin{itemize}
+				\renewcommand{\labelitemi}{\scriptsize$\blacksquare$} 
+				\item{ \fontsize{12}{14}\bodyfont In order to distribute sugar over a build platform, I Learned to modify Marlin firmware to communicate with a slave arduino to drive a series of motors and servos.}
+				\item{ \fontsize{12}{14}\bodyfont Our lab is interested in re-capitulating the architectural features of native vasculature. For this, I used SolidWorks, OpenSCAD, blender, python, Slic3r and Pronterface to design and print vascular templates with varying degrees of architectural complexity.}
+				\item{ \fontsize{12}{14}\bodyfont Building the physical SLS machine required CAD of several 3D printed parts. Dozens of part designs and configurations were tested to ultimately construct the OpenSLS R5.}
+			\end{itemize}
+			
+			
+			
+			
+			
+		{\fontsize{12}{14}\headerfont Cohrs Lab, UCD Medical School, Aurora, CO}
+		\raggedright{\fontsize{12}{14}\regfont \hfill June 2016 - August 2016 \\
+		\smallskip
+		\fontsize{12}{14}\bodyfont Participated in a summer internship program studying the herpes simplex virus}
+		\begin{itemize}
+				\renewcommand{\labelitemi}{\scriptsize$\blacksquare$}
+				\item{ \fontsize{12}{14}\bodyfont Learned and executed a 3 day, ~50 step protocol, gaining critical project management and documentation skills. Moreover, I learned how routine tasks could benefit from  critical thought.}
+				\item{ \fontsize{12}{14}\bodyfont Analyzed next-generation sequencing data on HSV-1 RNA to annotate viral gene features.}
+			\end{itemize}
+	\end{textblock}
+	
+	
+%% ACHIEVEMENTS SECTION %%
+
+	\begin{textblock}{.45}[.5,.5](0.33,0.85)
+		{\fontsize{16}{1}\headerfont Achievements and Honors }
+		\smallskip
+				\begin{itemize}
+				\renewcommand{\labelitemi}{\scriptsize$\blacksquare$}
+				\item{ \fontsize{12}{14}\bodyfont Co-author: \textit{Open-source Selective Laser Sintering (OpenSLS) of nylon and biocompatible polycaprolactone. PLoS One. 2016} \href{http://dx.doi.org/10.1371/journal.pone.0147399}{doi: 10.1371/journal.pone.0147399}}
+				\item{ \fontsize{12}{14}\bodyfont 3rd Place Falcon 50 Marathon Series}
+				\item{ \fontsize{12}{14}\bodyfont Jewish Institute for National Security Affairs Scholar}
+				\item{ \fontsize{12}{14}\bodyfont Volunteer Marathon Coach, Alzheimers Association, \textit{2011, 2012}}
+				\item{ \fontsize{12}{14}\bodyfont Hispanic Scholarship Fund Recipient, \textit{2014, 2015, 2016}}
+				\item{ \fontsize{12}{14}\bodyfont 1st Place, Rice Undergraduate Research Symposium}
+				\item{ \fontsize{12}{14}\bodyfont Rice Sustaining Excellence in Research Scholar, Howard Hughes Medical Institute Scholarship Recipient, \textit{2015}}
+			\end{itemize}
+
+	\end{textblock}
+	
+	
+	
+
+
+%% ABOUT ME %% 
+	\begin{textblock}{.4}[.5,.5](0.75,0.8)
+		{\fontsize{16}{18}\headerfont About Me \\}
+		\bigskip
+		\includegraphics[width=3.5cm, height=3.85cm]{Cropped_Resume_Image}
+
+	\end{textblock}
+	\begin{textblock}{.3}[.5,.5](0.75,0.925)
+		{\fontsize{12}{14}\bodyfont A Colorado native, I am passionate about running, rock climbing, drawing and of course, open source technology. How passionate? I used Inkscape and \LaTeX\  for this resume! }
+	\end{textblock}
+	
+
+
+	%\begin{textblock}{.3}[.5,.5](0.3,0.3)
+		%\begin{itemize}
+  			%\item {\fontsize{12}{1}\bodyfont One entry in the list}
+  			%\item {\fontsize{12}{1}\bodyfont Another entry in the list}
+		%\end{itemize}
+	%\end{textblock}
+ \end{center}
+ \end{titlepage}
+ \end{document}
